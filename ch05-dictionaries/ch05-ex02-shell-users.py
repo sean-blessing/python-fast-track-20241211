@@ -5,9 +5,9 @@ with open('./ch05-dictionaries/files/passwd') as file_in:
         fields = line.rstrip().split(":")
         shell = fields[6]
         if shell in shell_count:
-            count = shell_count[shell]
-            count+=1
-            shell_count[shell] = count
+            # count = shell_count[shell]
+            # count+=1
+            shell_count[shell] += 1
         else:
             # ignore empty entry
             #if shell.rstrip() != '':
